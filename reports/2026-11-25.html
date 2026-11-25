@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-11-25">
+<meta name="description" content="Identification of settlement and expectations, urban form, and a preliminary structural decision-making framework.">
+
+<title>Structural Modeling of Historical Transportation Network Decisions – Research Progress</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0c08ee2b502cc8e3fcaf610fb728c8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4831b88cb7311e93ad8c32bfc2391ddd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a0c08ee2b502cc8e3fcaf610fb728c8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Research Progress</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-home" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Home</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-home">    
+        <li>
+    <a class="dropdown-item" href="../about.html">
+ <span class="dropdown-text">Profile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../thesis.html">
+ <span class="dropdown-text">Master’s Thesis</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../weekly.html"> 
+<span class="menu-text">Weekly Reports</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#research-focus-and-progress" id="toc-research-focus-and-progress" class="nav-link active" data-scroll-target="#research-focus-and-progress">1. Research Focus and Progress</a></li>
+  <li><a href="#identification-of-settlement-and-expectations" id="toc-identification-of-settlement-and-expectations" class="nav-link" data-scroll-target="#identification-of-settlement-and-expectations">2. Identification of Settlement and Expectations</a>
+  <ul class="collapse">
+  <li><a href="#the-main-problem" id="toc-the-main-problem" class="nav-link" data-scroll-target="#the-main-problem">2.1. The Main Problem</a></li>
+  <li><a href="#preliminary-identification-example" id="toc-preliminary-identification-example" class="nav-link" data-scroll-target="#preliminary-identification-example">2.2. Preliminary Identification Example</a></li>
+  <li><a href="#towards-an-identification-strategy" id="toc-towards-an-identification-strategy" class="nav-link" data-scroll-target="#towards-an-identification-strategy">2.3. Towards an Identification Strategy</a></li>
+  <li><a href="#proposed-simulation-exercise" id="toc-proposed-simulation-exercise" class="nav-link" data-scroll-target="#proposed-simulation-exercise">2.4. Proposed Simulation Exercise</a></li>
+  </ul></li>
+  <li><a href="#settlement-patterns-and-urban-form" id="toc-settlement-patterns-and-urban-form" class="nav-link" data-scroll-target="#settlement-patterns-and-urban-form">3. Settlement Patterns and Urban Form</a></li>
+  <li><a href="#preliminary-decision-making-framework" id="toc-preliminary-decision-making-framework" class="nav-link" data-scroll-target="#preliminary-decision-making-framework">4. Preliminary Decision-Making Framework</a>
+  <ul class="collapse">
+  <li><a href="#structural-decision-model" id="toc-structural-decision-model" class="nav-link" data-scroll-target="#structural-decision-model">4.1. Structural Decision Model</a></li>
+  <li><a href="#dynamic-decisions-and-evolutionary-game" id="toc-dynamic-decisions-and-evolutionary-game" class="nav-link" data-scroll-target="#dynamic-decisions-and-evolutionary-game">4.2. Dynamic Decisions and Evolutionary Game</a></li>
+  </ul></li>
+  <li><a href="#expected-contribution" id="toc-expected-contribution" class="nav-link" data-scroll-target="#expected-contribution">5. Expected Contribution</a></li>
+  <li><a href="#points-for-discussion" id="toc-points-for-discussion" class="nav-link" data-scroll-target="#points-for-discussion">6. Points for Discussion</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Structural Modeling of Historical Transportation Network Decisions</h1>
+</div>
+
+<div>
+  <div class="description">
+    Identification of settlement and expectations, urban form, and a preliminary structural decision-making framework.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 25, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="research-focus-and-progress" class="level2">
+<h2 class="anchored" data-anchor-id="research-focus-and-progress">1. Research Focus and Progress</h2>
+<p><strong>Working Research Objective</strong></p>
+<p>To develop a structural model of rail and road network decisions (building, retaining, and closing) that separates the effect of current settlement from that of expected population growth.</p>
+<p><strong>Main Research Question</strong></p>
+<p>How do existing settlement patterns and expectations of future population growth influence decisions to build, retain, or close rail and road networks?</p>
+<p><strong>Methodological Research Question</strong></p>
+<p>How can the influence of existing settlement patterns be distinguished from the influence of expectations of future population growth?</p>
+<p>Following the previous literature review and identification examples, the step is now focusing on developing a clearer methodological framework. Building on the identification problem discussed previously, I have organized the next methodological investigation around three cases: independent variation, strong correlation, and perfect dependence between existing settlement and expected growth.</p>
+<p>The main directions are: 1. Refining the identification problem by examining the conditions under which current settlement and expected growth have distinguishable effects. 2. Extending the definition of settlement patterns beyond population size to include spatial characteristics of urban form. 3. Clarifying how structural decision-making, dynamic decisions, and possible strategic interactions could be represented in the model.</p>
+<p>As an initial application, I propose examining construction decisions (build or do not build). This is a suggested starting point for discussion, while retention and closure remain within the broader research objective.</p>
+</section>
+<section id="identification-of-settlement-and-expectations" class="level2">
+<h2 class="anchored" data-anchor-id="identification-of-settlement-and-expectations">2. Identification of Settlement and Expectations</h2>
+<section id="the-main-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-main-problem">2.1. The Main Problem</h3>
+<p>A transportation investment decision may reflect existing settlement conditions, expectations of future development, or both.</p>
+<p>For example, a railway line may be constructed because the surrounding area already has a substantial population and transport demand. Alternatively, it may be constructed because decision-makers expect the area to grow.</p>
+<p>For the current framework, I refer to these mechanisms as:</p>
+<ul>
+<li><p>Reactive investment: Decisions mainly responding to existing settlement conditions and current needs.</p></li>
+<li><p>Anticipatory investment: Decisions influenced by expectations of future population growth or development.</p></li>
+</ul>
+<p>These are preliminary conceptual labels rather than established categories from the reviewed literature. Both influences may also operate simultaneously.</p>
+<p>The challenge is that observing a construction decision does not directly reveal the relative importance of these two mechanisms.</p>
+</section>
+<section id="preliminary-identification-example" class="level3">
+<h3 class="anchored" data-anchor-id="preliminary-identification-example">2.2. Preliminary Identification Example</h3>
+<p>The previous report introduced a simplified decision score:</p>
+<p><span class="math display">\[
+V = a + b_P P + b_E E
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><p>P = existing settlement conditions;</p></li>
+<li><p>E = expected population growth;</p></li>
+<li><p><span class="math inline">\(b_P\)</span> = influence of existing settlement;</p></li>
+<li><p><span class="math inline">\(b_E\)</span> = influence of expected growth.</p></li>
+</ul>
+<p>Suppose expectations are perfectly related to existing settlement:</p>
+<p><span class="math display">\[
+E = 0.1P
+\]</span></p>
+<p>The equation becomes:</p>
+<p><span class="math display">\[
+V = a + (b_P + 0.1b_E)P
+\]</span></p>
+<p>Under this relationship, different combinations of <span class="math inline">\(b_P\)</span> and <span class="math inline">\(b_E\)</span> can generate identical predicted decisions.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th style="text-align: right;">Model A</th>
+<th style="text-align: right;">Model B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(b_P\)</span></td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.25</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(b_E\)</span></td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td>Combined effect</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.25</td>
+</tr>
+</tbody>
+</table>
+<p>This illustrates that the two effects cannot be separately identified when expected growth is perfectly determined by existing settlement.</p>
+<p>The problem is therefore not simply whether expectations should be included in the model, but under what conditions their influence can be distinguished from existing settlement.</p>
+</section>
+<section id="towards-an-identification-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="towards-an-identification-strategy">2.3. Towards an Identification Strategy</h3>
+<p>A possible direction is to examine situations where expected growth differs despite similar existing settlement conditions.</p>
+<p>For example, consider two locations with the same existing settlement score (P = 10), but different expectations.</p>
+<p>Using a = −3:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Expected growth</th>
+<th style="text-align: right;">Model A score</th>
+<th style="text-align: right;">Model B score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(E=1\)</span></td>
+<td style="text-align: right;">−0.5</td>
+<td style="text-align: right;">−0.5</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(E=6\)</span></td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">−0.5</td>
+</tr>
+</tbody>
+</table>
+<p>When E changes independently of P, the two models produce different predictions.</p>
+<p>This suggests that independent information about expectations, or an appropriate structural model of expectation formation, may help distinguish the two effects.</p>
+<p>However, variation alone is not sufficient to establish identification. The model must also account for other factors affecting construction decisions and specify the assumptions under which the parameters can be recovered.</p>
+<p>An, Hu and Xiao (2021) provides a relevant methodological reference for identifying subjective beliefs and preferences in dynamic discrete-choice models. I am examining which aspects of their identification framework could inform this research.</p>
+</section>
+<section id="proposed-simulation-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="proposed-simulation-exercise">2.4. Proposed Simulation Exercise</h3>
+<p>The next methodological step is to examine three scenarios:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th>Relationship between P and E</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Independent variation</td>
+<td>Examine parameter recovery when both effects vary separately</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Strong correlation</td>
+<td>Examine how correlation affects estimation precision and stability</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Perfect relationship</td>
+<td>Demonstrate non-identification when E is determined by P</td>
+</tr>
+</tbody>
+</table>
+<p>The exercise would generate construction decisions under known parameters and then estimate the model to compare the estimated parameters with their true values.</p>
+<p>This simulation would test identification properties under specified assumptions. It would not, by itself, establish that historical decision-makers’ expectations can be recovered.</p>
+<p>Current status: The mathematical example has been developed. The simulation design is being refined.</p>
+</section>
+</section>
+<section id="settlement-patterns-and-urban-form" class="level2">
+<h2 class="anchored" data-anchor-id="settlement-patterns-and-urban-form">3. Settlement Patterns and Urban Form</h2>
+<p>Next, I am reconsidering how existing settlement conditions should be represented.</p>
+<p>In the preliminary model, settlement was mainly represented through a population-related variable. However, two areas with similar population sizes may have different spatial structures.</p>
+<p>For example, settlements may be concentrated around an urban center or dispersed across a wider area. These spatial differences could influence transportation needs, expected benefits, and construction costs.</p>
+<p>I propose exploring three preliminary dimensions:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Possible indicator</th>
+<th>Relevance to network decisions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population density</td>
+<td>Population per unit area</td>
+<td>Concentration of existing demand</td>
+</tr>
+<tr class="even">
+<td>Spatial concentration</td>
+<td>Degree of clustering</td>
+<td>Potential concentration of infrastructure benefits</td>
+</tr>
+<tr class="odd">
+<td>Settlement dispersion</td>
+<td>Spatial distribution of populated areas</td>
+<td>Network coverage and connection requirements</td>
+</tr>
+</tbody>
+</table>
+<p>These are my preliminary candidates, to be examined against the urban-form literature, including Stead and Marshall (2001).</p>
+<p>An important distinction is that improving the measurement of existing settlement does not automatically resolve the identification of future expectations.</p>
+<p>Instead, a clearer definition of settlement patterns can help specify what the model treats as existing conditions, while the identification strategy addresses how expectations can be distinguished from those conditions.</p>
+</section>
+<section id="preliminary-decision-making-framework" class="level2">
+<h2 class="anchored" data-anchor-id="preliminary-decision-making-framework">4. Preliminary Decision-Making Framework</h2>
+<section id="structural-decision-model" class="level3">
+<h3 class="anchored" data-anchor-id="structural-decision-model">4.1. Structural Decision Model</h3>
+<p>I am examining a structural decision-making framework as a possible starting point, while keeping open whether the relevant mechanism involves one decision-maker or strategic interactions among several actors.</p>
+<p>For a simplified baseline, one possible specification considers a representative infrastructure decision-maker choosing whether to construct a proposed link. This is an analytical starting assumption, not a final representation of the institutions involved.</p>
+<p>The decision would depend on the expected additional benefits and costs of construction.</p>
+<p>A preliminary formulation is:</p>
+<p><span class="math display">\[
+V = a + b_P P + b_E E - b_C C + b_N N
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><p>P = existing settlement conditions;</p></li>
+<li><p>E = expected population growth;</p></li>
+<li><p>C = expected construction cost;</p></li>
+<li><p>N = existing network conditions.</p></li>
+</ul>
+<p>The equation is currently a simplified decision score. Further theoretical development is needed to define the decision-maker’s objective and derive how expected benefits and costs enter the choice.</p>
+</section>
+<section id="dynamic-decisions-and-evolutionary-game" class="level3">
+<h3 class="anchored" data-anchor-id="dynamic-decisions-and-evolutionary-game">4.2. Dynamic Decisions and Evolutionary Game</h3>
+<p>Dynamic and strategic considerations may become relevant at a later stage. Brueckner and Picard (2015) examine the timing and location of irreversible infrastructure investment under uncertainty, which relates to the option of postponing construction. Wang and Xiang (2024) examine strategy adjustment among a central government, a local government and a railway company in a route-planning conflict. The paper offers a reference for defining players, strategies and payoffs, although it does not address settlement expectations or the separate identification of their effects.</p>
+<p>A single-decision-maker structural model is being considered as a possible baseline. Dynamic investment timing and strategic interactions will be evaluated according to their relevance to the decision mechanism. An evolutionary game would be particularly relevant if the adjustment of strategies among multiple actors over time is central to the research question.</p>
+</section>
+</section>
+<section id="expected-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="expected-contribution">5. Expected Contribution</h2>
+<p>The intended individual contribution is methodological: to develop a structural approach for explaining historical transportation network decisions, and in particular a way to distinguish the influence of existing settlement conditions from that of expectations of future population growth.</p>
+<p>Reactive and anticipatory investment are preliminary labels for these two mechanisms. Both may operate simultaneously. The research aims to explain the mechanisms underlying network investment choices, rather than only describing where and when infrastructure developed.</p>
+<p>The precise contribution and model specification remain open to further theoretical assessment and feedback. Originality and validity have not yet been established.</p>
+</section>
+<section id="points-for-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="points-for-discussion">6. Points for Discussion</h2>
+<p>I would appreciate feedback on three issues.</p>
+<p><strong>1. Initial research scope</strong></p>
+<p>Would construction decisions be an appropriate starting point for developing the structural model, before extending it to retention and closure?</p>
+<p><strong>2. Decision-making framework</strong></p>
+<p>Would it be appropriate to begin with a single-decision-maker structural choice model, and to consider dynamic timing or strategic interaction as later extensions?</p>
+<p><strong>3. Identification methodology</strong></p>
+<p>What assumptions or methodological approaches would be most appropriate for distinguishing existing settlement effects from expectations of future population growth? In particular, would the identification framework of An, Hu and Xiao (2021) provide a useful starting point?</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ol type="1">
+<li>Examine the identification conditions in An, Hu and Xiao (2021) and clarify their relevance to transportation network decisions.</li>
+<li>Develop and test the three proposed identification simulation scenarios.</li>
+<li>Refine the definition and possible indicators of settlement patterns using the urban-form literature.</li>
+<li>Develop a more explicit structural construction decision model, including the decision- maker’s objective, alternatives, and expected benefits.</li>
+<li>Assess whether strategic interaction or investment timing needs to be added to the single-decision-maker model.</li>
+</ol>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>An, Y., Hu, Y., &amp; Xiao, R. (2021). Dynamic decisions under subjective expectations: A structural analysis. Journal of Econometrics, 222(1), 645–675.</p>
+<p>Brueckner, J. K., &amp; Picard, P. M. (2015). Where and when to invest in infrastructure. Regional Science and Urban Economics, 53, 123–134.</p>
+<p>Gennaioli, N., Ma, Y., &amp; Shleifer, A. (2016). Expectations and investment. NBER Macroeconomics Annual, 30, 379–431.</p>
+<p>Stead, D., &amp; Marshall, S. (2001). The relationships between urban form and travel patterns: An international review and evaluation. European Journal of Transport and Infrastructure Research, 1(2), 113–141.</p>
+<p>Wang, Y., &amp; Xiang, P. (2024). Evolutionary game and system dynamics for analysis on stakeholder strategies of regional high-speed rail project in investment decision stage. Technology in Society, 77, 102575.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

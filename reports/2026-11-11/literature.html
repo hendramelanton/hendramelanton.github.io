@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-11-11">
+
+<title>Literature Review: Investment Decisions and Expectations – Research Progress</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a0c08ee2b502cc8e3fcaf610fb728c8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-4831b88cb7311e93ad8c32bfc2391ddd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a0c08ee2b502cc8e3fcaf610fb728c8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Research Progress</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-home" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Home</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-home">    
+        <li>
+    <a class="dropdown-item" href="../../about.html">
+ <span class="dropdown-text">Profile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../thesis.html">
+ <span class="dropdown-text">Master’s Thesis</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../weekly.html"> 
+<span class="menu-text">Weekly Reports</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#wang-xiang-2024-evolutionary-games-in-high-speed-rail-investment-decisions" id="toc-wang-xiang-2024-evolutionary-games-in-high-speed-rail-investment-decisions" class="nav-link active" data-scroll-target="#wang-xiang-2024-evolutionary-games-in-high-speed-rail-investment-decisions">1. Wang &amp; Xiang (2024) — Evolutionary games in high-speed rail investment decisions</a></li>
+  <li><a href="#brueckner-picard-2015-where-and-when-to-invest" id="toc-brueckner-picard-2015-where-and-when-to-invest" class="nav-link" data-scroll-target="#brueckner-picard-2015-where-and-when-to-invest">2. Brueckner &amp; Picard (2015) — Where and when to invest</a></li>
+  <li><a href="#gennaioli-ma-shleifer-2016-expectations-and-investment" id="toc-gennaioli-ma-shleifer-2016-expectations-and-investment" class="nav-link" data-scroll-target="#gennaioli-ma-shleifer-2016-expectations-and-investment">3. Gennaioli, Ma &amp; Shleifer (2016) — Expectations and investment</a></li>
+  <li><a href="#an-hu-xiao-2021-structural-identification-of-subjective-expectations" id="toc-an-hu-xiao-2021-structural-identification-of-subjective-expectations" class="nav-link" data-scroll-target="#an-hu-xiao-2021-structural-identification-of-subjective-expectations">4. An, Hu &amp; Xiao (2021) — Structural identification of subjective expectations</a></li>
+  <li><a href="#comparison-table-of-the-four-papers" id="toc-comparison-table-of-the-four-papers" class="nav-link" data-scroll-target="#comparison-table-of-the-four-papers">Comparison table of the four papers</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Literature Review: Investment Decisions and Expectations</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 11, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="wang-xiang-2024-evolutionary-games-in-high-speed-rail-investment-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="wang-xiang-2024-evolutionary-games-in-high-speed-rail-investment-decisions">1. Wang &amp; Xiang (2024) — Evolutionary games in high-speed rail investment decisions</h3>
+<p>Wang, Y., &amp; Xiang, P. (2024). Evolutionary game and system dynamics for analysis on stakeholder strategies of regional high-speed rail project in investment decision stage. Technology in Society, 77, 102575. DOI: 10.1016/j.techsoc.2024.102575</p>
+<section id="a.-research-problem-and-objective" class="level4">
+<h4 class="anchored" data-anchor-id="a.-research-problem-and-objective">A. Research problem and objective</h4>
+<p>In developing regional high-speed rail in China, decisions about routes and project locations bring together parties whose interests do not always align. The central government considers national interests, local governments seek benefits for their regions, and China Railway evaluates its organizational or corporate interests and route plans. Conflicts may delay route design and investment decisions. The main question is not “Does population cause a railway line to be built?” but rather how each party’s strategic choices evolve as incentives, costs, rewards, and penalties change. The authors aim to identify stable outcomes and propose ways to coordinate conflicts. (pp.&nbsp;1–3)</p>
+</section>
+<section id="b.-framework-and-assumptions-about-the-players" class="level4">
+<h4 class="anchored" data-anchor-id="b.-framework-and-assumptions-about-the-players">B. Framework and assumptions about the players</h4>
+<ul>
+<li>Three actors: the central government, local government, and China Railway. They are not treated</li>
+</ul>
+<p>as a single decisionmaker.</p>
+<ul>
+<li>Each actor has two strategies: central government intervene or not; local government negotiate or</li>
+</ul>
+<p>not; China Railway support or not support a route plan that takes public interests into account. (pp.&nbsp;3–4)</p>
+<ul>
+<li>The probabilities of choosing these strategies are represented by α (intervention), β (negotiation),</li>
+</ul>
+<p>and γ (support), each ranging from 0 to 1.</p>
+<ul>
+<li>Bounded rationality assumption: actors have incomplete information and gradually adjust their</li>
+</ul>
+<p>behavior or strategies, rather than immediately knowing the optimal outcome of the entire game. (p.&nbsp;4)</p>
+</section>
+<section id="c.-method-evolutionary-game-system-dynamics" class="level4">
+<h4 class="anchored" data-anchor-id="c.-method-evolutionary-game-system-dynamics">C. Method: evolutionary game + system dynamics</h4>
+<p>First, the authors construct a payoff matrix for every combination of the three actors’ strategies eight pure-strategy combinations (2 × 2 × 2). An actor’s payoff depends on the strategies selected by the other two actors. The matrix is then used to derive the expected payoff of each strategy. Under replicator dynamics, the proportion of actors choosing a given strategy changes according to whether that strategy performs better than their average payoff. (pp.&nbsp;4–8)</p>
+<p>The general logic is: dα/dt = α(1−α) × [payoff from intervention, payoff from non-intervention]. Similar expressions are used for β and γ; the payoff differences contain combinations of costs, penalties, rewards, and the other actors’ actions. This is a simplified explanation of the authors’ equation structure, not a full reproduction of any individual equation. When the difference is positive, the tendency to choose that strategy increases; when negative, it decreases.</p>
+<p>The authors assess the stability of the eight strategy combinations using a Jacobian matrix and its eigenvalues. They then implement the dynamic equations in a system dynamics model to simulate changes in the proportions of strategies over time. The actor relationships and game tree appear in</p>
+<p>Figures 1–2 (pp.&nbsp;4–5), equilibrium stability conditions in Table 3 (p.&nbsp;9), and the dynamics model in Figure 6 (p.&nbsp;9).</p>
+</section>
+<section id="d.-simulations-and-reported-results" class="level4">
+<h4 class="anchored" data-anchor-id="d.-simulations-and-reported-results">D. Simulations and reported results</h4>
+<p>The numerical simulations use cost and benefit parameters assigned to model scenarios and vary those parameters to examine the direction and speed of strategic changes. The stated simulation horizon is 10 years. Figures 7–11 compare paths towards strategy combinations and the effects of changing parameters. Since the analysis mainly simulates assumed parameter values, these numerical results should not be treated as empirical estimates of government behavior based on observed project decisions. (pp.&nbsp;10–14)</p>
+<ul>
+<li>The central government moves towards intervention more quickly when intervention costs and</li>
+</ul>
+<p>rewards paid to the other parties are lower, or when the opportunity cost of non-intervention and penalties imposed on other parties are higher.</p>
+<ul>
+<li>Local governments move towards negotiation more quickly when negotiation benefits, relevant</li>
+</ul>
+<p>rewards and penalties, and reputational losses from not negotiating increase; lower negotiation costs also strengthen this strategy.</p>
+<ul>
+<li>China Railway moves towards support more quickly when the benefits of support, incentives, and</li>
+</ul>
+<p>reputational pressure increase, while the additional cost of support and benefits of non-support decrease. (p.&nbsp;14)</p>
+</section>
+<section id="e.-contribution-limitations-and-relevance" class="level4">
+<h4 class="anchored" data-anchor-id="e.-contribution-limitations-and-relevance">E. Contribution, limitations, and relevance</h4>
+<p>Contribution claimed by the authors: the paper links conflicts among key stakeholders at the route- investment decision stage to an evolutionary game, analyzes equilibrium stability, and then examines strategic changes through system dynamics. It addresses stakeholder coordination rather than directly estimating why one link is constructed while another is closed. (pp.&nbsp;2–3, 14)</p>
+<p>Scope limitations: the three actors and their two strategies are selected specifically for conflicts over regional high-speed rail routes in China. The model focuses on investment decisions and conflict coordination, not on retaining or closing existing links. It also does not identify the effects of population distribution or expected population growth using historical data.</p>
+<p>If network decisions are shown to result from negotiations among central and local governments and operators, strategic interaction may be substantively important. The paper does not establish the model must be an evolutionary game, nor does it offer a method for identifying historical population expectations. A key question before adopting the approach is whether the data reveal repeated decisions and changes in several actors’ strategies, or only the final construction or closure decision.</p>
+</section>
+</section>
+<section id="brueckner-picard-2015-where-and-when-to-invest" class="level3">
+<h3 class="anchored" data-anchor-id="brueckner-picard-2015-where-and-when-to-invest">2. Brueckner &amp; Picard (2015) — Where and when to invest</h3>
+<p>Brueckner, J. K., &amp; Picard, P. M. (2015). Where and when to invest in infrastructure. Regional Science and Urban Economics, 53, 123–134. DOI: 10.1016/j.regsciurbeco.2015.05.003</p>
+<section id="a.-research-problem-question-and-modeled-decisions" class="level4">
+<h4 class="anchored" data-anchor-id="a.-research-problem-question-and-modeled-decisions">A. Research problem, question, and modeled decisions</h4>
+<p>A government has a limited budget and can undertake only one infrastructure investment that increases regional income. There are two candidate locations (a and b), and the investment is irreversible once undertaken. The government must choose both where and when to invest, now or in the second period. Waiting can provide better information and avoid choosing the wrong location, but it sacrifices benefits that would have been received from investing immediately. (pp.&nbsp;1–3)</p>
+<p>The authors provide transport examples, including the Los Angeles Green Line routing decision and toll roads where demand fell far below projections. These examples motivate the model; the paper itself is a theoretical analysis rather than an estimation of parameters from those projects. (pp.&nbsp;2–3)</p>
+</section>
+<section id="b.-two-different-sources-of-uncertainty" class="level4">
+<h4 class="anchored" data-anchor-id="b.-two-different-sources-of-uncertainty">B. Two different sources of uncertainty</h4>
+<ul>
+<li>Option model: first-period investment benefits can be compared, but second-period benefits</li>
+</ul>
+<p>depend on uncertain shocks that are not yet known. By waiting, the government can observe these shocks before choosing a location. (pp.&nbsp;3–6)</p>
+<ul>
+<li>Signal model: the relative productivity advantage of a location is essentially fixed, but in the first</li>
+</ul>
+<p>period the government observes only an imperfect signal about which region is more productive. Waiting reveals the true advantage. (pp.&nbsp;3, 6–9)</p>
+<p>This distinction matters: “the benefit is unknown because the future has not happened” is different from “the underlying benefit already has a particular value, but present information is unclear.” Both can justify postponement, although changes in uncertainty do not have identical implications.</p>
+</section>
+<section id="c.-decision-structure-and-mathematical-mechanism" class="level4">
+<h4 class="anchored" data-anchor-id="c.-decision-structure-and-mathematical-mechanism">C. Decision structure and mathematical mechanism</h4>
+<p>The general model compares the expected values of two decisions: investing now in a location chosen using current information, versus postponing investment and choosing a location after obtaining more information. The one-time investment incurs a cost c, while its benefits take the form of increased regional income over several periods. The government maximizes expected net gains while accounting for benefits lost during the waiting period. (pp.&nbsp;3–4)</p>
+<p>In the option model, future benefits at locations a and b are affected by random shocks that may be correlated. By waiting, the government can choose the location with the better second-period outcome; the value of waiting depends on the joint distribution of the shocks and the possibility that the ranking of locations will reverse. In the signal model, the government uses signals to calculate the probability that location a is more productive than b. It invests immediately when the signal is sufficiently favorable, while less informative signals lead it to postpone the decision. (pp.&nbsp;4–9)</p>
+<p>Illustrative logic (our example, not figures from the paper): if A appears only slightly better than B but information is very weak, waiting may be useful because the preferred location could change. If A is clearly superior and the risk of choosing the wrong location is small, the additional information may not justify losing one period of benefits.</p>
+</section>
+<section id="d.-main-analytical-findings" class="level4">
+<h4 class="anchored" data-anchor-id="d.-main-analytical-findings">D. Main analytical findings</h4>
+<ul>
+<li>Higher investment costs tend to strengthen the case for waiting, because they reduce the net gain</li>
+</ul>
+<p>from immediate investment.</p>
+<ul>
+<li>A longer period of benefits after the initial investment date makes waiting relatively more</li>
+</ul>
+<p>attractive: sacrificing one early period matters less when better information can improve the choice over many later periods.</p>
+<ul>
+<li>A greater difference in productivity benefits between the two locations reduces the incentive to</li>
+</ul>
+<p>wait, because the advantage of choosing the better location is clearer.</p>
+<ul>
+<li>In the signal model, noisier signals expand the range of circumstances in which waiting is</li>
+</ul>
+<p>optimal. In the option model, greater variance in future benefits does not necessarily increase the tendency to wait; its effect can be ambiguous because the government chooses between two locations.</p>
+<ul>
+<li>In the option model, higher correlation between regional benefit shocks reduces the gains from</li>
+</ul>
+<p>waiting; shocks that move together are less likely to change the ranking of locations. (p.&nbsp;10)</p>
+</section>
+<section id="e.-contribution-limitations-and-implications" class="level4">
+<h4 class="anchored" data-anchor-id="e.-contribution-limitations-and-implications">E. Contribution, limitations, and implications</h4>
+<p>Contribution identified by the authors: formalizing an irreversible decision that jointly addresses “where” and “when” under imperfect information, distinguishing two uncertainty mechanisms, and identifying similarities and differences in their results. (p.&nbsp;10)</p>
+<p>Limitations acknowledged by the authors: the setting is deliberately simplified, two locations, two periods, one investment, and assumptions that permit analytical solutions. Section 4.6 offers only a limited analysis of signals sent by local governments. The authors identify a more general signaling model and potentially rising investment costs over time as possible extensions. (pp.&nbsp;3–4, 10)</p>
+<p>This provides an important theoretical basis for the idea that construction decisions may depend on expectations and the value of waiting, rather than only on current population. However, the paper does not estimate expectations of population growth from historical network choices, develop a build–retain–close model, or test identification of settlement effects versus expectations. Therefore, “investment is delayed because of uncertainty” and “separating two influences on historical choices” must be treated as different research questions.</p>
+</section>
+</section>
+<section id="gennaioli-ma-shleifer-2016-expectations-and-investment" class="level3">
+<h3 class="anchored" data-anchor-id="gennaioli-ma-shleifer-2016-expectations-and-investment">3. Gennaioli, Ma &amp; Shleifer (2016) — Expectations and investment</h3>
+<p>Gennaioli, N., Ma, Y., &amp; Shleifer, A. (2016). Expectations and investment. BIS Working Papers No.&nbsp;562 (the uploaded version; also published in NBER Macroeconomics Annual). DOI: 10.1086/685965</p>
+<section id="a.-research-questions-and-the-reason-for-using-expectations-data" class="level4">
+<h4 class="anchored" data-anchor-id="a.-research-questions-and-the-reason-for-using-expectations-data">A. Research questions and the reason for using expectations data</h4>
+<p>The paper asks two questions about corporate investment: do managers’ expectations of earnings growth help explain planned and actual investment, and are those expectations rational? This differs from assuming that expectations can be fully inferred from a rational model. The authors argue that beliefs reported directly by decisionmakers may provide information not captured by conventional investment indicators. (pp.&nbsp;5–7)</p>
+</section>
+<section id="b.-data-expectations-reported-by-decisionmakers" class="level4">
+<h4 class="anchored" data-anchor-id="b.-data-expectations-reported-by-decisionmakers">B. Data: expectations reported by decisionmakers</h4>
+<p>The main source is Duke University’s quarterly survey of CFOs, which asks about expected earnings growth and planned capital expenditure over the next 12 months. The authors link these responses to financial statements and actual investment data from Compustat for US nonfinancial firms. They also use financial analysts’ earnings forecasts as an additional measure of expectations. Their observations support analyses at both aggregate and firm levels; sample construction and data treatment are described in Section 3 and the descriptive tables. (pp.&nbsp;9–12)</p>
+<p>An important advantage of this approach is that it separates “what the CFO thought would happen when making the decision” from “what eventually happened.” Expectations are not automatically represented by future earnings growth, which researchers can observe after the event.</p>
+</section>
+<section id="c.-economic-theory-and-empirical-strategy" class="level4">
+<h4 class="anchored" data-anchor-id="c.-economic-theory-and-empirical-strategy">C. Economic theory and empirical strategy</h4>
+<p>The authors develop a simple investment model based on Q-theory, but replace reliance on market valuation data with decisionmakers’ reported forecasts of future earnings. Around Equation (3), planned investment growth is related to expected earnings growth and changes in the capital stock. The economic intuition is that when CFOs expect earnings to rise, firms anticipate higher returns on new capital and plan more investment. The authors explicitly do not impose all coefficient restrictions from a strict version of the resulting Q-equation. (pp.&nbsp;12–14)</p>
+<p>Empirically, the link between expectations and investment is examined using regressions and comparison or control variables, such as market-based Tobin’s Q, discount rates, cash flow, uncertainty, and financing constraints. Investment plans are also compared with actual capital spending to assess whether investment intentions correspond to real decisions. Further analysis tests forecast rationality by asking whether forecast errors can be predicted using information available beforehand. (pp.&nbsp;15–27)</p>
+</section>
+<section id="d.-findings-actually-obtained" class="level4">
+<h4 class="anchored" data-anchor-id="d.-findings-actually-obtained">D. Findings actually obtained</h4>
+<ul>
+<li>Expected earnings growth is strongly associated with corporate investment plans at both</li>
+</ul>
+<p>aggregate and firm levels; the relationship remains meaningful after including several conventional explanatory variables. In one initial specification, a one-standard-deviation increase</p>
+<p>in earnings expectations is associated with approximately a 0.8-standard-deviation increase in planned investment. This is a reported association, not definitive causal evidence. ( p.&nbsp;15)</p>
+<ul>
+<li>Investment plans are also associated with investment actually undertaken, so the findings extend</li>
+</ul>
+<p>beyond statements of managerial intention. (Section 5, pp.&nbsp;15–21)</p>
+<ul>
+<li>Earnings forecast errors can be predicted from past information. CFOs and analysts tend to</li>
+</ul>
+<p>extrapolate previous earnings trends too strongly into the future, so realized outcomes often differ from forecasts. (Section 6, pp.&nbsp;21–27)</p>
+<ul>
+<li>The authors examine alternative explanations, including measurement problems, asymmetric loss</li>
+</ul>
+<p>functions, and information rigidities. They view extrapolation as the simplest explanation that best fits the evidence, without claiming to rule out every alternative. (pp.&nbsp;24–27)</p>
+</section>
+<section id="e.-contribution-limitations-and-relevance-1" class="level4">
+<h4 class="anchored" data-anchor-id="e.-contribution-limitations-and-relevance-1">E. Contribution, limitations, and relevance</h4>
+<p>Contribution: showing why expectations data actually reported by decisionmakers can complement, and sometimes outperform, conventional investment indicators, and why rational expectations should be tested rather than assumed automatically. The paper combines a simple Q-theory framework, expectations surveys, financial statements, and forecast-error tests. (p.&nbsp;27)</p>
+<p>Stated limitations: available data restrict the questions that can be addressed, including the development of a more complete understanding of how expectations are formed. The authors emphasize future work on realistic theories of expectations while accounting for possible changes in behavior when policy changes. The study also concerns corporate investment rather than transportation network choice. (pp.&nbsp;27–28)</p>
+<p>The main lesson is to be careful when measuring expected population growth. Population changes that actually occurred after a decision are NOT evidence that decisionmakers had anticipated them. If historical population projections, planning documents, or pre-construction signals are available, they may help; otherwise, an explicit model of expectation formation will be needed. However, this paper does not provide a ready-made method for reconstructing government expectations from past network decisions.</p>
+</section>
+</section>
+<section id="an-hu-xiao-2021-structural-identification-of-subjective-expectations" class="level3">
+<h3 class="anchored" data-anchor-id="an-hu-xiao-2021-structural-identification-of-subjective-expectations">4. An, Hu &amp; Xiao (2021) — Structural identification of subjective expectations</h3>
+<p>An, Y., Hu, Y., &amp; Xiao, R. (2021). Dynamic decisions under subjective expectations: A structural analysis. Journal of Econometrics, 222(1), 645–675. DOI: 10.1016/j.jeconom.2020.04.046</p>
+<section id="a.-core-issue-the-same-choice-may-reflect-different-beliefs" class="level4">
+<h4 class="anchored" data-anchor-id="a.-core-issue-the-same-choice-may-reflect-different-beliefs">A. Core issue: the same choice may reflect different beliefs</h4>
+<p>In a dynamic decision model, today’s choice depends on immediate benefits, the continuation value of future outcomes, and beliefs about how conditions may change. Since researchers generally observe actions but not beliefs, a combination of “strong preferences but pessimistic expectations” may look like “weak preferences but optimistic expectations.” A common response is to assume rational expectations, meaning that subjective beliefs equal objective transition probabilities. This paper develops an alternative way to identify preferences and subjective beliefs without universally imposing that assumption. (pp.&nbsp;1–3)</p>
+</section>
+<section id="b.-structure-of-the-dynamic-discrete-choice-model" class="level4">
+<h4 class="anchored" data-anchor-id="b.-structure-of-the-dynamic-discrete-choice-model">B. Structure of the dynamic discrete-choice model</h4>
+<p>In each period, one agent chooses an action from a finite set to maximize lifetime utility. The model includes a state observed by the researcher, unobserved preference shocks, per-period utility, a discount factor, and a state-transition process. The agent holds subjective transition probabilities: the probabilities, according to their own beliefs, that tomorrow’s state changes from x to x′ after choosing action a. These may differ from objective probabilities calculated by the researcher. (Section 2, pp.&nbsp;3–5)</p>
+<p>The authors work with conditional choice probabilities (CCPs), meaning the probability of a particular action in a given state. Relationships among CCP ratios, differences in action utilities, continuation values, and subjective beliefs provide the equations used for identification. They use the recursive structure of Bellman equations and the Hotz–Miller relationship for CCPs. (pp.&nbsp;4–8)</p>
+</section>
+<section id="c.-identification-conditions-choices-alone-are-not-automatically-sufficient" class="level4">
+<h4 class="anchored" data-anchor-id="c.-identification-conditions-choices-alone-are-not-automatically-sufficient">C. Identification conditions: choices alone are not automatically sufficient</h4>
+<p>Identification is established under strong, specific assumptions whose relevance must be assessed. It does NOT mean that expectations can always be recovered from any sequence of observed decisions. The authors assume that the discount factor and distribution of unobserved preference shocks are known, then use variation in CCPs and information restrictions to separate preferences from subjective beliefs. (pp.&nbsp;2, 5–11)</p>
+<ul>
+<li>Finite horizon: if preferences and beliefs remain constant over a certain period, changes in CCPs</li>
+</ul>
+<p>for the same state as the final period approaches reveal information about continuation values. However, identification requires many consecutive periods, matrix rank conditions, and some known transition beliefs for a reference action. (pp.&nbsp;5–8)</p>
+<ul>
+<li>The authors show that the required panel length can exceed the number of possible state values;</li>
+</ul>
+<p>this becomes a practical problem when the state has many categories. An additional state variable with a known, independent transition process can reduce the time requirement under certain conditions. (pp.&nbsp;2–3, 8–10)</p>
+<ul>
+<li>Infinite horizon: because stationary CCPs do not provide comparable time variation,</li>
+</ul>
+<p>identification requires an additional state variable with a particular transition process, exclusion restrictions on utility, and partial knowledge of beliefs for a reference action. (pp.&nbsp;9–11)</p>
+<ul>
+<li>The model is also extended to types of agents with different beliefs or preferences that are not</li>
+</ul>
+<p>directly observed. Identification uses a latent-class structure and information from repeated decisions. Additional restrictions are still required. (pp.&nbsp;12–14)</p>
+</section>
+<section id="d.-estimation-monte-carlo-simulations-and-empirical-application" class="level4">
+<h4 class="anchored" data-anchor-id="d.-estimation-monte-carlo-simulations-and-empirical-application">D. Estimation, Monte Carlo simulations, and empirical application</h4>
+<p>After setting out the identification conditions, the authors propose maximum likelihood estimation, with normalizations for belief components that must be treated as known. For latent types of agents, they use an iterative approach that includes the EM algorithm. Monte Carlo simulations at different sample sizes assess whether the estimated parameters recover their true values when data are generated under either rational or subjective expectations. (pp.&nbsp;14–17)</p>
+<p>The simulations show that an estimator allowing subjective beliefs performs reasonably well with moderate sample sizes. By contrast, when data are generated under subjective beliefs but the researcher imposes rational expectations, the estimated utility parameters may be biased, and the problem does not disappear simply by increasing sample size. (pp.&nbsp;16–17, Tables 1–6)</p>
+<p>For the empirical application, the authors use PSID data and women’s decisions to work or not work, with household income classified as low, medium, or high. Annual histories are constructed for a particular age range; estimation draws on repeated panel observations and tests beliefs about income transitions conditional on actions. The application therefore concerns labor-force participation, not transportation investment. (pp.&nbsp;17–23)</p>
+</section>
+<section id="e.-specific-empirical-findings" class="level4">
+<h4 class="anchored" data-anchor-id="e.-specific-empirical-findings">E. Specific empirical findings</h4>
+<ul>
+<li>Households’ perceived income-transition probabilities differ from the transition probabilities</li>
+</ul>
+<p>actually observed, so the authors reject the rational-expectations hypothesis in their tests. (pp.&nbsp;22– 23, Table 9)</p>
+<ul>
+<li>For example, among middle-income households with a non-working wife, the subjective</li>
+</ul>
+<p>probability of remaining in the middle-income group is about 0.85, compared with an objective probability of about 0.92. The subjective probability of falling into the low-income group is 0.15, compared with an objective probability of about 0.07. ( p.&nbsp;23)</p>
+<ul>
+<li>Counterfactual results show that changing assumptions about beliefs can alter the probability of</li>
+</ul>
+<p>working, with effects differing by income group. At age 57, the reported differences in choice probabilities are approximately 12.8% for the low-income group, 4.4% for the middle-income group, and 3.7% for the high-income group. ( p.&nbsp;23, Table 10)</p>
+<p>In one empirical specification, the authors do not reject a stationarity test for beliefs at the 5% level (p = 0.084), but explicitly caution that this finding relies on particular assumptions about beliefs across stages of life. It is not general evidence that people do not learn. ( p.&nbsp;23)</p>
+</section>
+<section id="f.-contribution-limitations-and-relevance" class="level4">
+<h4 class="anchored" data-anchor-id="f.-contribution-limitations-and-relevance">F. Contribution, limitations, and relevance</h4>
+<p>Contribution: identifying preferences and subjective beliefs in finite- and infinite-horizon dynamic discrete-choice models, including extensions for heterogeneity, together with a maximum likelihood procedure, simulations, and an empirical application. The authors show that non-rational expectations can affect behavioral estimation and policy analysis. (pp.&nbsp;2–3, 23)</p>
+<p>Limitations: some parameters must be normalized or known; the approach requires sufficient variation in CCPs, observations across time, partial reference beliefs or an additional state variable with a known process, and rank conditions. The authors also do not causally explain how beliefs are formed; they explicitly leave this for future work. (pp.&nbsp;2–3, 23)</p>
+<p>Applying it is not automatic: construction and closure decisions may occur rarely for the same unit, the decision-maker may change, and continuous states such as population may require grouping or model extensions. Before adopting An–Hu–Xiao’s approach, need to check whether historical data provide repeated decisions, relevant variation, and plausible restrictions for identifying expectations of population growth.</p>
+</section>
+</section>
+<section id="comparison-table-of-the-four-papers" class="level3">
+<h3 class="anchored" data-anchor-id="comparison-table-of-the-four-papers">Comparison table of the four papers</h3>
+<p>The authors’ research gaps refer to problems they explicitly identify; relevance is an analytical assessment, not a proven new research gap.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Wang &amp; Xiang (2024)</th>
+<th>Brueckner &amp; Picard (2015)</th>
+<th>Gennaioli et al.&nbsp;(2016)</th>
+<th>An, Hu &amp; Xiao (2021)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Main focus</td>
+<td>Strategic conflicts among stakeholders in high-speed rail projects</td>
+<td>Location and timing of irreversible infrastructure investment</td>
+<td>Relationship between managers’ earnings expectations and corporate investment</td>
+<td>Identifying preferences and beliefs in dynamic discrete choices</td>
+</tr>
+<tr class="even">
+<td>Key question</td>
+<td>When do intervention, negotiation, and support become stable strategies?</td>
+<td>Invest now or wait; choose location A or B?</td>
+<td>Do CFO forecasts explain investment, and are the forecasts rational?</td>
+<td>Can subjective beliefs be recovered from actions without assuming rational expectations?</td>
+</tr>
+<tr class="odd">
+<td>Method</td>
+<td>Three-party evolutionary game; replicator dynamics; Jacobian; system dynamics</td>
+<td>Two-period theoretical models: option and signal; optimal waiting decision</td>
+<td>Simple Q-theory + CFO expectations survey + regressions and forecast- error analysis</td>
+<td>Dynamic discrete choice; CCPs and Bellman equations; identification; MLE; Monte Carlo</td>
+</tr>
+<tr class="even">
+<td>Data/evidence</td>
+<td>Simulations under assumed model parameters; not estimation from historical network choices</td>
+<td>Analytical results; transport cases used as illustrations</td>
+<td>Duke CFO survey; Compustat; analyst forecasts; planned and actual investment</td>
+<td>Monte Carlo simulations and PSID data on women’s employment decisions</td>
+</tr>
+<tr class="odd">
+<td>Variables or mechanism</td>
+<td>Intervention, negotiation, and support costs; rewards, penalties, reputation, strategic payoffs</td>
+<td>Location-specific benefits, investment cost, future signals and shocks, correlation across regions</td>
+<td>Expected earnings growth, investment plans and realizations, Q, cash flow, forecast errors</td>
+<td>Action utility, states, subjective/objective transitions, CCPs, continuation values</td>
+</tr>
+<tr class="even">
+<td>Main findings</td>
+<td>Incentives and penalties influence strategies and the speed of convergence to equilibrium</td>
+<td>Waiting is valuable because information improves; uncertainty has different effects across models</td>
+<td>Expectations help explain investment; forecast errors are predictable and often extrapolative</td>
+<td>Incorrect rational- expectations assumptions may bias estimates; subjective beliefs are identified under conditions</td>
+</tr>
+<tr class="odd">
+<td>Gap identified by authors</td>
+<td>Limited models for coordinating stakeholder conflicts at the HSR route- investment stage</td>
+<td>Lack of a joint analysis of investment location and timing under imperfect information</td>
+<td>Insufficient examination of directly reported expectations and the rational-expectations assumption in investment</td>
+<td>Limited identification results for subjective beliefs from choices without belief surveys</td>
+</tr>
+<tr class="even">
+<td>Key limitations</td>
+<td>Specific actors and strategies for Chinese HSR; assumed simulation parameters</td>
+<td>Two locations, two periods, one investment, simplifying assumptions</td>
+<td>Corporate investment context and limits of data and explanations of expectation formation</td>
+<td>Requires identification restrictions, choice variation, suitable states/transitions, and adequate panel data</td>
+</tr>
+<tr class="odd">
+<td>Relevance</td>
+<td>Helps assess whether governments/operators interact strategically; not a direct build–close model</td>
+<td>Explains the importance of expectations and the option to delay construction</td>
+<td>Highlights expectations available before a decision, not future outcomes observed later</td>
+<td>Closest framework for separating preferences from beliefs, but demanding data conditions</td>
+</tr>
+<tr class="even">
+<td>Does not address</td>
+<td>Effects of settlements and population expectations on build/retain/close decisions</td>
+<td>Identification of population expectations from historical networks or closure choices</td>
+<td>Recovering government expectations from historical network decisions</td>
+<td>Institutional mechanisms for road/rail or direct modeling of build–retain–close choices</td>
+</tr>
+</tbody>
+</table>
+<p><a href="literature-review.pdf">Original literature review (PDF)</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

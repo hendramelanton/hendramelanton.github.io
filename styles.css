@@ -1,0 +1,46 @@
+/* Typography */
+body {
+  line-height: 1.8;
+  letter-spacing: 0.1px;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* Navigation */
+.navbar {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.navbar-title {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* Page layout */
+#quarto-content {
+  padding-top: 25px;
+}
+
+/* Weekly reports */
+.listing-title {
+  font-weight: 600;
+}
+
+.quarto-post {
+  padding: 22px 0;
+}
+
+/* Categories */
+.listing-category {
+  border-radius: 4px;
+  font-size: 0.72rem;
+}
