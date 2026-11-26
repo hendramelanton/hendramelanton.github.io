@@ -44,3 +44,40 @@ h2 {
   border-radius: 4px;
   font-size: 0.72rem;
 }
+
+/* Ocean Blue Dark Mode */
+
+body.quarto-dark {
+  background-color: #263c47;
+  color: #e4f2f7;
+  --bs-body-bg: #263c47;
+  --bs-body-color: #e4f2f7;
+  --bs-border-color: #526b77;
+}
+
+body.quarto-dark .navbar {
+  background-color: #365e70 !important;
+}
+
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3,
+body.quarto-dark h4 {
+  color: #e4f2f7;
+}
+
+body.quarto-dark a {
+  color: #9ed9e8;
+}
+
+body.quarto-dark a:hover {
+  color: #ffffff;
+}
+
+body.quarto-dark .navbar a {
+  color: #e4f2f7;
+}
+
+body.quarto-dark hr {
+  border-color: #526b77;
+}
