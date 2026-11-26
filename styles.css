@@ -118,3 +118,74 @@ h3 {
   font-size: 0.9rem;
   font-weight: 400;
 }
+/* About Page Font Size */
+
+body:has(.about-profile) h1.title {
+  font-size: 32px;
+}
+
+.about-profile .profile-name {
+  font-size: 26px;
+}
+
+.about-profile {
+  font-size: 16px;
+}
+
+body:has(.about-profile) h2 {
+  font-size: 22px;
+}
+
+body:has(.about-profile) p,
+body:has(.about-profile) li {
+  font-size: 16px;
+}
+/* About - Final Visual Design */
+
+body.quarto-dark:has(.about-profile) .profile-name {
+  color: #78b6c8 !important;
+  font-size: 26px !important;
+  font-weight: 500 !important;
+}
+
+body:has(.about-profile) h1.title {
+  font-size: 32px !important;
+  font-weight: 500 !important;
+  margin-bottom: 24px !important;
+}
+
+body:has(.about-profile) h2 {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  margin-top: 28px !important;
+}
+
+body:has(.about-profile) p,
+body:has(.about-profile) li {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+}
+
+body:has(.about-profile) li {
+  margin-bottom: 10px !important;
+}
+
+body.quarto-dark:has(.about-profile) li::marker {
+  color: #9ed9e8 !important;
+}
+
+body:has(.about-profile) .about-profile {
+  line-height: 1.5 !important;
+}
+/* Elegant Divider Lines */
+
+body.quarto-dark hr {
+  border: 0;
+  border-top: 1px solid #628391;
+  opacity: 1;
+}
+
+body.quarto-dark h2 {
+  border-bottom: 1px solid #628391;
+}
